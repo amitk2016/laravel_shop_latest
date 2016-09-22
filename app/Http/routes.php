@@ -27,6 +27,10 @@ Route::get('Contact','ContactController@index');
 
 Route::get('cart','CartController@index');
 Route::post('cart/Add/{id}','CartController@add')->middleware('auth');
+Route::get('cart/Remove/{id}','CartController@remove')->middleware('auth');
+
+
+Route::get('Checkout/{id}','CheckoutController@index')->middleware('auth');
 
 
 Route::auth();

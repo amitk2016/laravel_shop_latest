@@ -45,11 +45,11 @@
 		</div>
 		
 		<div class="form-group {{ $errors->has('quantity') ? 'has-error' : '' }}">
-			<input class="form-control" type="number" name="quantity" min="0" max="10">
+			<input class="form-control" type="number" name="quantity" min="0">
 			{!! $errors->first('quantity','<span class="help-block">:message</span>')!!}
 		</div>
 	
-		<button type="submit" class="btn">Add to cart</button>
+		<button type="submit" class="btn" name="addtocart">Add to cart</button>
 		</form>
 	</div>
 
